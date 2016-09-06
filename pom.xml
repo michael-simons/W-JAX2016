@@ -9,6 +9,10 @@
 
     <name>W-JAX 2016</name>
     <description>Demos for the talk "Keine Magie: Individuelle Spring-Boot-Module"</description>
+    
+    <modules>
+        <module>demo</module>        
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
