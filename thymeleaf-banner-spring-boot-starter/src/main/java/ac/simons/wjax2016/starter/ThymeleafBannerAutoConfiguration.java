@@ -1,6 +1,5 @@
-package ac.simons.wjax2016.demo;
+package ac.simons.wjax2016.starter;
 
-import ac.simons.wjax2016.starter.SomeBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
