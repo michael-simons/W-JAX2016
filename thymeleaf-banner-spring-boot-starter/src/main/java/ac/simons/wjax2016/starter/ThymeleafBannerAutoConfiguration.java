@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration;
 import org.springframework.cache.CacheManager;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ConfigurationCondition.ConfigurationPhase;
 import org.springframework.core.env.Environment;
@@ -49,8 +50,7 @@ class ThymeleafBannerAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnBean(CacheManager.class)
-    @ConditionalOnProperty("thymeleaf-banner.cacheName")    
+    @Conditional(OnNoBannerButFun.class)
     public BannerSupplier joshsBannerSupplier(CacheManager cacheManager, @Value("${thymeleaf-banner.cacheName}") String cacheName) {
         return new JoshsBannerSupplier(cacheManager.getCache(cacheName));
     }
