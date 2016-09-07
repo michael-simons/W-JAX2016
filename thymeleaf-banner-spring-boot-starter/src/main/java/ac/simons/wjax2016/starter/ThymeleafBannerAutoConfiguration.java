@@ -5,6 +5,7 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,6 +18,7 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 class ThymeleafBannerAutoConfiguration {
 
     @Bean
+    @ConditionalOnProperty(name = "spring.main.banner-mode", havingValue = "off")
     public BannerSupplier emptyBannerSupplier() {
         return args -> new ArrayList<>();
     }
