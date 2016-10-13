@@ -31,3 +31,9 @@ Gerne über [michael-simons.eu](http://michael-simons.eu) oder Twitter, ich bin 
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"Keine Magie: Individuelle Spring-Boot-Module"</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/michael-simons/W-JAX2016" property="cc:attributionName" rel="cc:attributionURL">Michael J. Simons</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+
+## Bildrechte der Präsentation
+
+* "High Voltage Towers": © iStockphoto.com/[querbeet](http://www.istockphoto.com/portfolio/querbeet)
+* "Old New Architecture Winnipeg": © iStockphoto.com/[photosmash](http://www.istockphoto.com/portfolio/photosmash)
+* "Freddie Mercury": Still from Queens 1986 "A Kind Of Magic" music video
