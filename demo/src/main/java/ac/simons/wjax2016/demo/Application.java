@@ -14,13 +14,13 @@ public class Application {
     @Controller
     static class DemoController {
 
-	@RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
-	public String index() {
-	    return "index";
-	}
+    @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
+    public String index() {
+        return "index";
+    }
     }
 
     public static void main(String... args) {
-	SpringApplication.run(Application.class, args);
+    SpringApplication.run(Application.class, args);
     }
 }
