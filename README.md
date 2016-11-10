@@ -20,6 +20,28 @@ Dabei werden folgende Themen demonstriert:
 * Vorstellung der Annotationen `ConditionalOnClass`, `ConditionalOnProperty`, `ConditionalOnBean` sowie deren Negationen
 * Möglichkeiten zum Debugging automatischer Konfiguration
 
+## Fragen und Antworten
+
+Während des Vortrags kam die Frage auf, wie man die Benutzer eines Starters bei der Konfiguration desselben unterstützen könne. 
+
+Die üblichen Java IDEs NetBeans, Eclipse und IntelliJ bieten eine Autovervollständigung für die Properties aller möglichen Starter.
+
+Dieses Feature kann sehr einfach für eigene Starter realisiert werden. In [Appendix B. Configuration meta-data](http://docs.spring.io/spring-boot/docs/current/reference/html/configuration-metadata.html) wird beschrieben, wie eine Datei `META-INF/spring-configuration-metadata.json` aussehen muss, die die relevanten Informationen beinhaltet.
+
+Setzt man in seinem Starter Klassen ein, die mit `@ConfigurationProperties` annotiert sind, um seine Properties zentral zur Verfügung hab und hat die Attribute der Klassen ordentlich mit JavaDoc Kommentaren dokumentieren, kann obige Datei generieren lassen:
+
+```
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+```
+
+In meinem [wro4j-spring-boot-starter](https://github.com/michael-simons/wro4j-spring-boot-starter) habe ich dies im Commit [#a59b3f4](https://github.com/michael-simons/wro4j-spring-boot-starter/commit/a59b3f4341825f83304c9db3e0daaddf9552096f) exemplarisch gemacht, das Ergebnis ist direkt sichtbar:
+
+![Support of configuration properties](slides/documented-starter-properties.png)
+
 ## Weitere Informationen
 
 Der Vortrag existiert auch in einer [englischen Version](https://github.com/michael-simons/springio2016), die auf der [Spring I/O 2016](http://www.springio.net) vorgestellt wurde. Ein Videomitschnitt ist auf YouTube zu sehen: [Customize your Spring Boot experience by writing your own Spring Boot starter](https://www.youtube.com/watch?v=wSWA63rZfGo).
