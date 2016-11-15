@@ -4,6 +4,13 @@
 
 **Wichtig:** _Die Commits und die Kommentare sind sehr ausführlich und beinhalten  wichtige Teile des Vortrages. Vielleicht helfen sie weiter, wenn etwas unverständlich ist._
 
+## Slides
+
+The slides are inside this repository and also on Speakerdeck:
+
+[Keine Magie: Individuelle Spring-Boot-Module](https://speakerdeck.com/michaelsimons/keine-magie-individuelle-spring-boot-module)
+
+
 ## Vortrag auf der W-JAX 2016
 
 _Note: The talk and the slides are in German as W-JAX con is a German conference, the demo, the readme and other artifacts inside this repo are in English in hope they are useful to a broader audience._
